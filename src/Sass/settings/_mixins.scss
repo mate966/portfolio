@@ -1,0 +1,69 @@
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin boxes-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin max-width {
+    width: 100%;
+    max-width: 670px;
+}
+
+@mixin section-padding-top {
+    padding-top: 60px;
+
+    @include breakpoint("lg") {
+        padding-top: 120px;
+    }
+}
+
+@mixin form-box {
+    width: 100%;
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid #31383d;
+    font-family: $text-font;
+    font-size: 1.3rem;
+    color: #fff;
+
+    &:focus {
+        border-color: #05ffcd;
+        outline: none;
+    }
+}
+
+@mixin portfolio-background {
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    filter: grayscale(0);
+    transition: 0.5s ease;
+}
+
+@mixin arrow-scroll {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #1e2326;
+    cursor: pointer;
+
+    & i {
+        @include absolute-center;
+        font-size: 1.8rem;
+    }
+}

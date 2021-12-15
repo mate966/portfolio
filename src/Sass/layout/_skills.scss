@@ -1,0 +1,47 @@
+.skills {
+    @include section-padding-top;
+    text-align: center;
+}
+
+.skills__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include breakpoint("xs") {
+        justify-content: center;
+    }
+    @include breakpoint("lg") {
+        justify-content: space-between;
+    }
+}
+
+.skills__rectangle {
+    @include boxes-flex;
+    margin: 10px 0;
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 370px;
+    min-height: 270px;
+    border: 1px solid #31383d;
+    cursor: pointer;
+    &:hover {
+        background-color: #05ffcd;
+        border: 1px solid #fff;
+        color: #1d2325;
+    }
+
+    @include breakpoint("xs") {
+        margin: 10px;
+    }
+
+    @include breakpoint("lg") {
+        margin: 10px 0;
+    }
+}
+
+.skills__rectangle:last-child {
+    @include breakpoint("lg") {
+        margin: 10px auto;
+    }
+}

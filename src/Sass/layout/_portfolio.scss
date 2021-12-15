@@ -1,0 +1,64 @@
+.portfolio {
+    @include section-padding-top;
+    text-align: center;
+}
+
+.portfolio__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include breakpoint("xs") {
+        justify-content: center;
+    }
+
+    @include breakpoint("lg") {
+        justify-content: space-between;
+    }
+}
+
+.portfolio__project {
+    @include boxes-flex;
+    margin: 10px 0;
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 370px;
+    min-height: 270px;
+    border: 1px solid #31383d;
+    cursor: pointer;
+
+    @include breakpoint("xs") {
+        margin: 10px;
+    }
+    @include breakpoint("lg") {
+        margin: 10px 0;
+    }
+
+    &:hover {
+        filter: brightness(10%);
+        background-size: auto 120%;
+        filter: grayscale(1);
+    }
+
+    &:hover .project__hover {
+        opacity: 1;
+    }
+}
+
+.portfolio__container .aos-init:nth-child(4),
+.portfolio__container .aos-init:nth-child(5) {
+    @include breakpoint("lg") {
+        margin: 10px auto;
+    }
+}
+
+.project__hover {
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.lol-signup {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../assets/lol-signup.png");
+    @include portfolio-background;
+}

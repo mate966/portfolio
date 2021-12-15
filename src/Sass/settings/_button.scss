@@ -1,0 +1,16 @@
+.see-more-button {
+    width: 200px;
+    height: 60px;
+    border: 1px solid #05ffcd;
+    border-radius: 30px;
+    background-color: transparent;
+    font-family: $text-font;
+    color: #05ffcd;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+        background-color: #05ffcd;
+        color: #fff;
+    }
+}

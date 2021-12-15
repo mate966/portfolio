@@ -1,0 +1,59 @@
+.experience {
+    padding: 110px;
+    text-align: center;
+}
+
+.experience__content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 531px;
+}
+
+.experience__jobs {
+    position: absolute;
+    width: 445px;
+
+    &:nth-child(1) {
+        left: 1%;
+    }
+    &:nth-child(3) {
+        top: 24%;
+        left: 55%;
+    }
+}
+
+.experience__road {
+    position: absolute;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.road__line {
+    position: relative;
+    left: calc(50% - 1px);
+    display: block;
+    width: 2px;
+    height: 531px;
+    background-color: #31383d;
+}
+
+.road__dot {
+    position: absolute;
+    left: -5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #05ffcd;
+
+    &:nth-child(1) {
+        top: 10%;
+    }
+
+    &:nth-child(2) {
+        top: 25%;
+    }
+}
+
+//TODO:dokończyć sekcję

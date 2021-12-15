@@ -1,0 +1,49 @@
+.hire {
+    margin-top: 60px;
+    padding: 30px 0;
+    min-height: 257px;
+    text-align: center;
+    background-color: #9b9a9a;
+
+    @include breakpoint("md") {
+        margin-top: 120px;
+        padding: 0 30px;
+    }
+}
+
+.hire__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 257px;
+
+    @include breakpoint("md") {
+        padding: 0 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.hire__heading {
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+
+    @include breakpoint("xs") {
+        margin-bottom: 30px;
+    }
+    @include breakpoint("md") {
+        margin: 0;
+    }
+}
+
+.hire-wrap {
+    margin: 20px auto;
+    max-width: 480px;
+    line-height: 3rem;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 1.7rem;
+
+    @include breakpoint("md") {
+        margin: 0 110px;
+    }
+}
