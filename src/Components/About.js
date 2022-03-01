@@ -63,7 +63,7 @@ const About = () => {
                     przyjaciółmi! */}
                 </p>
                 {window.location.pathname === "/about" ? null : (
-                    <Button value="Zobacz więcej!" />
+                    <Button value="Zobacz więcej!" path="/about" />
                 )}
             </div>
         </section>

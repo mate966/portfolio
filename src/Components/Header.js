@@ -9,44 +9,31 @@ import Nav from "./Nav";
 
 const Header = () => {
     return (
-        <header className="header">
+        <header>
             <Nav />
             <div className="header__slider wrapper">
                 <Splide
                     options={{
-                        // type: "loop",
-                        // speed: 400,
-                        // autoplay: true,
-                        // pauseOnHover: false,
+                        type: "loop",
                         arrows: false,
-                        classes: {
-                            arrows: "arrows",
-                            arrow: "arrow",
-                            prev: "arrow-prev",
-                            next: "arrow-next",
-                            pagination:
-                                "splide__pagination__container slider-container",
-                            page: "splide__pagination__page slider-page",
-                        },
+                        speed: 2000,
+                        autoplay: true,
+                        pauseOnHover: false,
                     }}
                     hasSliderWrapper
                 >
                     <SplideSlide>
                         <div className="header__welcome">
-                            <h1 className="welcome-heading">
-                                Hej! Miło Cię poznać!
-                            </h1>
+                            <h1 className="welcome-heading">Mateusz Szweda</h1>
                             <h2 className="welcome-text">
-                                Nazywam się Mateusz i jestem tu po to by
-                                zbudować wizytówkę Twojej osoby bądź firmy.
-                                Wiem, wiem... Ciężko zaufać komuś kogo się nie
-                                zna, więc jeśli masz ochotę dowiedzieć się
-                                więcej na mój temat, nie krępuj się i wpadaj w
-                                zakładkę 'O mnie'!
+                                Hej! Miło Cię poznać! Nazywam się Mateusz i
+                                jestem tu po to by zbudować wizytówkę Twojej
+                                osoby bądź firmy. Wiem, wiem... Ciężko zaufać
+                                komuś kogo się nie zna, więc jeśli masz ochotę
+                                dowiedzieć się więcej na mój temat, nie krępuj
+                                się i wpadaj w zakładkę 'O mnie'!
                             </h2>
-                            <Link to="/about">
-                                <Button value="O mnie" />
-                            </Link>
+                            <Button value="O mnie" path="/about" />
                         </div>
                     </SplideSlide>
                     <SplideSlide>
@@ -56,12 +43,12 @@ const Header = () => {
                             </h1>
                             <h2 className="welcome-text">
                                 Odkąd zakochałem się w programowaniu udało mi
-                                się już stworzyć kilka projektów. Ciekawy?
-                                Zapraszam do mojego małego świata FrontEnd!
+                                się już stworzyć kilka prac. Cały wolny czas
+                                poświęcam na rozwój swoich umiejętności i budowę
+                                nowych projektów. Ciekawy? Zapraszam do mojego
+                                małego świata Frontend!
                             </h2>
-                            <Link to="/portfolio">
-                                <Button value="Portfolio" />
-                            </Link>
+                            <Button value="Portfolio" path="/portfolio" />
                         </div>
                     </SplideSlide>
                     <SplideSlide>
@@ -71,22 +58,18 @@ const Header = () => {
                             </h1>
                             <h2 className="welcome-text">
                                 Odwiedziłeś już wszystko? Daj znać jak Ci się
-                                podobała ta wycieczka. Jako, że poszukuje pracy
-                                jako FrontEnd Developer, możesz kontaktować się
-                                ze mną również w tej sprawie! Odezwij się, a na
-                                pewno odpowiem!
+                                podobała ta wycieczka i zostaw feedback. Jako,
+                                że poszukuje pracy jako FrontEnd Developer,
+                                możesz kontaktować się ze mną również w tej
+                                sprawie! Odezwij się, a na pewno odpowiem!
                             </h2>
-                            <Link to="/contact">
-                                <Button value="Kontakt" />
-                            </Link>
+                            <Button value="Kontakt" path="/contact" />
                         </div>
                     </SplideSlide>
                 </Splide>
             </div>
-            <HashLink smooth to="/#about">
-                <div className="arrow-down">
-                    <i className="fas fa-chevron-down"></i>
-                </div>
+            <HashLink smooth to="#about" className="arrow-down">
+                <i className="fas fa-chevron-down"></i>
             </HashLink>
         </header>
     );

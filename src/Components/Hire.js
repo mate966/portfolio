@@ -13,9 +13,7 @@ const Hire = () => {
                     odezwij się w wygodnej dla Ciebie formie. Obiecuję, że na
                     pewno się dogadamy!
                 </p>
-                <Link to="/contact">
-                    <Button value="Zatrudnij mnie!" />
-                </Link>
+                <Button value="Zatrudnij mnie" path="/contact" />
             </div>
         </section>
     );

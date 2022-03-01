@@ -1,16 +1,27 @@
 .see-more-button {
+    margin: 0 auto;
     width: 200px;
     height: 60px;
-    border: 1px solid #05ffcd;
+    border: 1px solid $accent-color;
     border-radius: 30px;
     background-color: transparent;
     font-family: $text-font;
-    color: #05ffcd;
     cursor: pointer;
     transition: 0.2s;
 
+    a {
+        color: $accent-color;
+    }
+
     &:hover {
-        background-color: #05ffcd;
-        color: #fff;
+        background-color: $accent-color;
+
+        a {
+            color: #fff;
+        }
+    }
+
+    @include breakpoint("md") {
+        margin: 0;
     }
 }

@@ -1,6 +1,10 @@
 .navigation {
-    margin-top: 60px;
+    margin-top: 30px;
     width: 100%;
+
+    @include breakpoint("sm") {
+        margin-top: 60px;
+    }
 }
 
 .navigation__container {
