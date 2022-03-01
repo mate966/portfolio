@@ -45,22 +45,12 @@ const About = () => {
                     </div>
                 </div>
                 <p className="section__paragraph">
-                    {/* Hej! Nazywam się Mateusz Szweda. Pochodzę z Tczewa, choć na
-                    co dzień pracuję w Wielkiej Brytanii. Od dłuższego czasu mam
-                    obsesję na punkcie Web Developmentu czego efektem jest kilka
-                    prac, które możesz ujrzeć w zakładce portfolio. */}
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Labore, odio, cupiditate modi fuga eos tempore rerum
-                    distinctio culpa, consequuntur in repellendus dolores ut
-                    magni aliquam eveniet nemo! Cumque, veritatis hic?
-                    {/* choć moje serce cały czas pozostaje w moim
-                    rodzinnym mieście.  */}
-                    {/* Od dłuższego czasu mam obsesję na punkcie Web Developmentu i
-                    każdą wolną chwilę poświęcam na rozwijanie tej pasji. Kocham
-                    boks, lubię szachy oraz wciągającą lekturę. Gram w
-                    wszelkiego rodzaju gry, od planszówek po Tomb Raidera, ale
-                    ponadto stawiam na wspólnie spędzony czas z rodziną i
-                    przyjaciółmi! */}
+                    Witaj ponownie! Pozwól, że przedstawię się jeszcze raz.
+                    Nazywam się Mateusz i pochodzę z Tczewa. Kilka lat temu
+                    zainteresowałem się Frontendem, a pasja ta przerodziła się w
+                    nałóg... Nałóg, na który poświęcam każdą wolną chwilę i
+                    robię to z przyjemnością. Jeśli jeszcze Cię nie zanudziłem
+                    to zapraszam do lektury o mojej osobie!
                 </p>
                 {window.location.pathname === "/about" ? null : (
                     <Button value="Zobacz więcej!" path="/about" />

@@ -24,10 +24,7 @@
     margin: 40px auto;
     max-width: 700px;
     min-height: 180px;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    letter-spacing: 1px;
-    font-weight: 300;
+    @include paragraph-settings;
 
     @include breakpointLandscape("xs") {
         margin: 20px auto;
@@ -53,9 +50,8 @@
 }
 
 .section__paragraph {
-    line-height: 2rem;
-    font-size: 1.5rem;
-    font-weight: 300;
+    margin: 20px auto;
+    @include paragraph-settings;
 }
 
 .box__heading {

@@ -9,7 +9,6 @@
     }
 
     @include breakpoint("lg") {
-        justify-content: flex-start;
         overflow: visible;
     }
 }
@@ -28,9 +27,11 @@
         margin-left: 30px;
         box-shadow: -10px 0px 0px 4px #1d2325, -10px 0px 0px 5px #fff;
     }
+
     @include breakpoint("lg") {
         box-shadow: -20px 0px 0px 8px #1d2325, -20px 0px 0px 9px #fff;
     }
+
     @include breakpoint("xl") {
         margin: 0;
         box-shadow: -30px 0px 0px 11px #1d2325, -30px 0px 0px 12px #fff;
@@ -40,16 +41,12 @@
 .about__content {
     @include flex-column-center;
     justify-content: space-around;
-    padding: 60px 0 0 0;
+    padding-top: 60px;
     min-height: 395px;
     text-align: center;
 
-    * {
-        margin: 0;
-    }
-
     @include breakpoint("xs") {
-        max-width: 480px;
+        max-width: 550px;
     }
 
     @include breakpoint("md") {
@@ -57,16 +54,7 @@
         justify-content: center;
         margin-left: 50px;
         padding: 0;
-        max-width: 500px;
         text-align: left;
-
-        * {
-            margin: 9px 0;
-        }
-    }
-
-    @include breakpoint("lg") {
-        max-width: 550px;
     }
 }
 
@@ -76,20 +64,15 @@
     width: 230px;
     font-size: 2rem;
 
-    & div {
-        margin: 0;
-    }
-
     & i {
-        margin: 0;
         padding: 11px;
         border: 1px solid #fff;
         border-radius: 50%;
         cursor: pointer;
 
         &:hover {
-            border: 1px solid #05ffcd;
-            color: #05ffcd;
+            border: 1px solid $accent-color;
+            color: $accent-color;
         }
     }
 }
