@@ -23,21 +23,20 @@
     padding: 40px 20px;
     width: 100%;
     max-width: 370px;
-    min-height: 270px;
+    min-height: 285px;
     border: 1px solid #31383d;
     cursor: pointer;
 
     @include breakpoint("xs") {
         margin: 10px;
     }
+
     @include breakpoint("lg") {
         margin: 10px 0;
     }
 
     &:hover {
-        filter: brightness(10%);
         background-size: auto 120%;
-        filter: grayscale(1);
     }
 
     &:hover .project__hover {
@@ -57,8 +56,32 @@
     transition: 0.5s ease;
 }
 
-.lol-signup {
+.law-office-image {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url("../assets/lol-signup.png");
+        url("../assets/projects-images/law-office-screenshot.jpg");
+    @include portfolio-background;
+}
+
+.portfolio-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../assets/projects-images/portfolio-screenshot.jpg");
+    @include portfolio-background;
+}
+
+.todo-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../assets/projects-images/todo-screenshot.jpg");
+    @include portfolio-background;
+}
+
+.weather-app-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../assets/projects-images/weather-app-screenshot.jpg");
+    @include portfolio-background;
+}
+
+.lol-form-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../assets/projects-images/lol-form-screenshot.jpg");
     @include portfolio-background;
 }

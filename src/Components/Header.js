@@ -1,6 +1,5 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 import Button from "./Button";

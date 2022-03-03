@@ -1,11 +1,13 @@
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 
-const StarWars = () => {
+import ScreenShot from "../assets/projects-images/lol-form-screenshot.jpg";
+
+const LolForm = () => {
     return (
         <>
             <Header />
-            <section className="project__present wrapper">
+            <section id="project__present" className="project__present wrapper">
                 <h3 className="section__heading">
                     League of Legends - Sign Up
                 </h3>
@@ -19,11 +21,21 @@ const StarWars = () => {
                     walidację po stronie użytkownika, która miała wpływ na
                     kolejne etapy rejestracji.
                 </p>
-                <div className="project__screen"></div>
+                <p className="section__paragraph">
+                    <a href="https://github.com/mate966/lol-form">GitHub</a>
+                </p>
+                <p className="section__paragraph">
+                    <a href="https://mate966.github.io/lol-form/">Live</a>
+                </p>
+                <img
+                    src={ScreenShot}
+                    alt="Zdjęcie poglądowe strony"
+                    className="screenshot"
+                />
             </section>
             <Footer />
         </>
     );
 };
 
-export default StarWars;
+export default LolForm;

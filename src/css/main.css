@@ -963,7 +963,7 @@ header {
   padding: 40px 20px;
   width: 100%;
   max-width: 370px;
-  min-height: 270px;
+  min-height: 285px;
   border: 1px solid #31383d;
   cursor: pointer;
 }
@@ -981,11 +981,7 @@ header {
 }
 
 .portfolio__project:hover {
-  -webkit-filter: brightness(10%);
-          filter: brightness(10%);
   background-size: auto 120%;
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
 }
 
 .portfolio__project:hover .project__hover {
@@ -1005,9 +1001,57 @@ header {
   transition: 0.5s ease;
 }
 
-.lol-signup {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../assets/lol-signup.png");
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/lol-signup.png");
+.law-office-image {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../assets/projects-images/law-office-screenshot.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/projects-images/law-office-screenshot.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.portfolio-image {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../assets/projects-images/portfolio-screenshot.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/projects-images/portfolio-screenshot.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.todo-image {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../assets/projects-images/todo-screenshot.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/projects-images/todo-screenshot.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.weather-app-image {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../assets/projects-images/weather-app-screenshot.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/projects-images/weather-app-screenshot.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.lol-form-image {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../assets/projects-images/lol-form-screenshot.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/projects-images/lol-form-screenshot.jpg");
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: center;
@@ -1396,6 +1440,7 @@ footer {
 
 .project__present {
   padding-top: 60px;
+  text-align: center;
 }
 
 @media (min-width: 1200px) {
@@ -1404,13 +1449,12 @@ footer {
   }
 }
 
-.project__screen {
+.screenshot {
+  margin: 10px auto;
   width: 100%;
-  height: 800px;
-  max-height: 800px;
-  background: url("../assets/lol-signup.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
+  border: 2px solid #31383d;
 }
 /*# sourceMappingURL=main.css.map */

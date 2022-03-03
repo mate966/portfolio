@@ -5,8 +5,11 @@ import App from "./App";
 import AboutPage from "./Pages/AboutPage";
 import ContactPage from "./Pages/ContactPage";
 import PortfolioPage from "./Pages/PortfolioPage";
-import StarWars from "./Portfolio/StarWars";
-import SignUpForm from "./Portfolio/SignUpForm";
+import LawOffice from "./Portfolio/LawOffice";
+import PortfolioSite from "./Portfolio/PortfolioSite";
+import Todo from "./Portfolio/TodoList";
+import WeatherApp from "./Portfolio/WeatherApp";
+import LolForm from "./Portfolio/LolForm";
 
 ReactDOM.render(
     <React.StrictMode>
@@ -16,8 +19,14 @@ ReactDOM.render(
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/portfolio" element={<PortfolioPage />} />
                 <Route path="/contact" element={<ContactPage />} />
-                <Route path="/portfolio/starwars" element={<StarWars />} />
-                <Route path="/portfolio/lol-signup" element={<SignUpForm />} />
+                <Route path="/portfolio/law-office" element={<LawOffice />} />
+                <Route
+                    path="/portfolio/portfolio-site"
+                    element={<PortfolioSite />}
+                />
+                <Route path="/portfolio/todo-list" element={<Todo />} />
+                <Route path="/portfolio/weather-app" element={<WeatherApp />} />
+                <Route path="/portfolio/lol-form" element={<LolForm />} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>,
