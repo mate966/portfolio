@@ -18,21 +18,18 @@
 
 .skills__rectangle {
     @include boxes-flex;
-    margin: 10px 0;
+    margin: 10px;
     padding: 40px 20px;
     width: 100%;
     max-width: 370px;
     min-height: 270px;
     border: 1px solid #31383d;
     cursor: pointer;
-    &:hover {
-        background-color: #05ffcd;
-        border: 1px solid #fff;
-        color: #1d2325;
-    }
 
-    @include breakpoint("xs") {
-        margin: 10px;
+    &:hover {
+        background-color: $accent-color;
+        border: 1px solid #fff;
+        color: $dark-color;
     }
 
     @include breakpoint("lg") {
@@ -40,7 +37,8 @@
     }
 }
 
-.skills__rectangle:last-child {
+.skills__rectangle:nth-last-child(1),
+.skills__rectangle:nth-last-child(2) {
     @include breakpoint("lg") {
         margin: 10px auto;
     }

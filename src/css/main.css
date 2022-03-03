@@ -880,7 +880,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10px 0;
+  margin: 10px;
   padding: 40px 20px;
   width: 100%;
   max-width: 370px;
@@ -895,12 +895,6 @@ header {
   color: #1d2325;
 }
 
-@media (min-width: 512px) {
-  .skills__rectangle {
-    margin: 10px;
-  }
-}
-
 @media (min-width: 1200px) {
   .skills__rectangle {
     margin: 10px 0;
@@ -908,7 +902,8 @@ header {
 }
 
 @media (min-width: 1200px) {
-  .skills__rectangle:last-child {
+  .skills__rectangle:nth-last-child(1),
+  .skills__rectangle:nth-last-child(2) {
     margin: 10px auto;
   }
 }

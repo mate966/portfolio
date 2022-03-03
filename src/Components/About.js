@@ -14,7 +14,7 @@ const About = () => {
         <section className="about wrapper" id="about">
             <div data-aos="fade-right" className="about__picture"></div>
             <div data-aos="fade-left" className="about__content">
-                <h3 className="section__heading">O mnie</h3>
+                <h2 className="section__heading">O mnie</h2>
                 <div className="socials">
                     <div>
                         <a

@@ -21,20 +21,20 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    box-shadow: 0px 0px 0px 7px #1d2325, 0px 0px 0px 8px #fff;
+    box-shadow: 0px 0px 0px 7px $dark-color, 0px 0px 0px 8px #fff;
 
     @include breakpoint("md") {
         margin-left: 30px;
-        box-shadow: -10px 0px 0px 4px #1d2325, -10px 0px 0px 5px #fff;
+        box-shadow: -10px 0px 0px 4px $dark-color, -10px 0px 0px 5px #fff;
     }
 
     @include breakpoint("lg") {
-        box-shadow: -20px 0px 0px 8px #1d2325, -20px 0px 0px 9px #fff;
+        box-shadow: -20px 0px 0px 8px $dark-color, -20px 0px 0px 9px #fff;
     }
 
     @include breakpoint("xl") {
         margin: 0;
-        box-shadow: -30px 0px 0px 11px #1d2325, -30px 0px 0px 12px #fff;
+        box-shadow: -30px 0px 0px 11px $dark-color, -30px 0px 0px 12px #fff;
     }
 }
 

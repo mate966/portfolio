@@ -25,29 +25,29 @@ const Header = () => {
                     <SplideSlide>
                         <div className="header__welcome">
                             <h1 className="welcome-heading">Mateusz Szweda</h1>
-                            <h2 className="welcome-text">
+                            <p className="welcome-text">
                                 Hej! Miło Cię poznać! Nazywam się Mateusz i
                                 jestem tu po to by zbudować wizytówkę Twojej
                                 osoby bądź firmy. Wiem, wiem... Ciężko zaufać
                                 komuś kogo się nie zna, więc jeśli masz ochotę
                                 dowiedzieć się więcej na mój temat, nie krępuj
                                 się i wpadaj w zakładkę 'O mnie'!
-                            </h2>
+                            </p>
                             <Button value="O mnie" path="/about" />
                         </div>
                     </SplideSlide>
                     <SplideSlide>
                         <div className="header__welcome">
                             <h1 className="welcome-heading">
-                                Muszę Ci się pochwalić!
+                                Frontend Developer
                             </h1>
-                            <h2 className="welcome-text">
+                            <p className="welcome-text">
                                 Odkąd zakochałem się w programowaniu udało mi
                                 się już stworzyć kilka prac. Cały wolny czas
                                 poświęcam na rozwój swoich umiejętności i budowę
                                 nowych projektów. Ciekawy? Zapraszam do mojego
                                 małego świata Frontend!
-                            </h2>
+                            </p>
                             <Button value="Portfolio" path="/portfolio" />
                         </div>
                     </SplideSlide>
@@ -56,13 +56,12 @@ const Header = () => {
                             <h1 className="welcome-heading">
                                 Gotowy do współpracy?
                             </h1>
-                            <h2 className="welcome-text">
+                            <p className="welcome-text">
                                 Odwiedziłeś już wszystko? Daj znać jak Ci się
-                                podobała ta wycieczka i zostaw feedback. Jako,
-                                że poszukuje pracy jako FrontEnd Developer,
-                                możesz kontaktować się ze mną również w tej
-                                sprawie! Odezwij się, a na pewno odpowiem!
-                            </h2>
+                                podobała ta wycieczka, a jeśli szukasz Juniora
+                                do swojej ekipy lub potrzebujesz zbudować swoją
+                                stronę odezwij się, a na pewno odpowiem!
+                            </p>
                             <Button value="Kontakt" path="/contact" />
                         </div>
                     </SplideSlide>
