@@ -42,9 +42,9 @@
 
 @mixin arrow-scroll {
     display: flex;
-    margin: 30px auto;
-    min-width: 45px;
-    min-height: 45px;
+    margin: 30px 0;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     background-color: #1e2326;
     font-size: 2rem;

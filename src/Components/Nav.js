@@ -26,7 +26,7 @@ const Nav = () => {
         >
             <div className="navigation__container wrapper">
                 <HashLink smooth to="/#">
-                    <img src={Logo} alt="Logo portfolio" />
+                    <img src={Logo} alt="Logo portfolio" class="logo" />
                 </HashLink>
                 <ul
                     className={

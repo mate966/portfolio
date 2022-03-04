@@ -1,3 +1,6 @@
+import { HashLink } from "react-router-hash-link";
+import Logo from "../assets/Logo.png";
+
 const Footer = () => {
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
@@ -6,10 +9,9 @@ const Footer = () => {
     return (
         <footer>
             <div className="footer__content wrapper">
-                <div className="footer__logo logo">
-                    <div className="logo-rectangle"></div>
-                    <div className="logo-initials">MS</div>
-                </div>
+                <HashLink smooth to="/#">
+                    <img src={Logo} alt="Logo portfolio" class="logo" />
+                </HashLink>
                 <div className="footer__socials socials">
                     <div>
                         <a
@@ -53,7 +55,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="copyright wrapper">
-                <p>2021 © Mateusz Szweda</p>
+                <p>2022 © Mateusz Szweda</p>
             </div>
         </footer>
     );

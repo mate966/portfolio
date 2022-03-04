@@ -55,4 +55,5 @@ header {
 
 .arrow-down {
     @include arrow-scroll;
+    margin: 30px auto;
 }
